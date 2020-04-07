@@ -1,0 +1,986 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secretaria de Finanzas de la Ciudad de México</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+    <!-- Styles -->
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicons.png">
+	<link href="styles/blog-img.css" rel="stylesheet" type="text/css">
+	
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="slider/style.css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link href="styles/owl.carousel.min.css" rel="stylesheet">
+
+   <!-- Javascript -->
+    <script
+  	src="http://code.jquery.com/jquery-3.3.0.js" integrity="sha256-TFWSuDJt6kS+huV+vVlyV1jM3dwGdeNWqezhTxXB/X8="crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin=" anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="vendors/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/dropdown.js"></script>
+    <script type="text/javascript" src="slider/jquery.js"></script>
+	
+</head>	
+<body>
+
+<header class="Header">
+    <div class="Header-top">
+        <div class="container">
+            <div class="row">
+                <div class="Header-content">		
+                    <div class="HeaderLogo">
+                        <a href="http://www.finanzas.cdmx.gob.mx">
+							<img class="Logo-cdmx" src="assets/Logo_CDMX.png"/>
+                            <img class="Logo-dep" src="assets/Logo_SEFIN.png"/>	
+                        </a>
+                    </div>
+					
+					 <div class="HeaderSearch">
+                        <form action="#" method="get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar en el sitio" name="q">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+	                                    <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+					</div>			
+                </div>
+				
+				
+				
+                <div class="Header-links">
+                    <ul class="Items">
+                      <li><a href="http://www.cdmx.gob.mx" target="_blank">CDMX</a> 
+						  <a href="http://www.cdmx.gob.mx/gobierno/gabinete/secretarias" target="_blank">Secretarías</a> / <strong>SAF</strong></li>
+                      <li><a href="http://transparencia.finanzas.cdmx.gob.mx" target="_blank">Transparencia</a></li>
+                        <li><a href="http://data.finanzas.cdmx.gob.mx/ssac/index.php" target="_blank">Atención Ciudadana</a></li>
+                        <li><a href="http://data.finanzas.cdmx.gob.mx/atencion_ciudadana/" target="_blank">Trámites y Servicios</a></li>
+                    </ul>
+                </div>		
+            </div>
+        </div>
+    </div>
+
+    <div class="HeaderMenu">
+        <div class="HeaderNav-mobile">
+            <a href="#" class="Mobile-actions dropdown-toggle parent" id="drop-header" data-toggle="dropdown" aria-haspopup="false"
+               aria-expanded="false">
+                Menú
+            </a>
+		      <div class="Header-finder">
+            <a href="http://www.finanzas.cdmx.gob.mx/#" class="Mobile-actions">
+                Buscar
+            </a>
+        </div>	
+            <div class="dropdown-menu child" id="mobile-menu">
+                <div class="only-mobile">
+                    <a id="enlaces-sefin" href="http://transparencia.finanzas.cdmx.gob.mx" target="_blank">
+                        <i class="fa fa-bolt" aria-hidden="true"></i> Transparencia
+                    </a>
+                    <a id="enlaces-sefin" href="http://data.finanzas.cdmx.gob.mx/ssac/index.php" target="_blank">
+                        <i class="fa fa-bolt" aria-hidden="true"></i> Atención Ciudadana
+					</a>
+					
+                    <a id="enlaces-sefin" href="http://data.finanzas.cdmx.gob.mx/atencion_ciudadana/" target="_blank">
+                        <i class="fa fa-bolt" aria-hidden="true"></i> Trámites y Servicios
+                    </a>
+                </div>
+                <div class="finanzas-submenu">
+                    <a id="inicio" class="enlaces-secretaria" href="index.html">
+                        Inicio
+                    </a>
+                </div>
+                <div class="finanzas-submenu">
+                    <a href="#" class="enlaces-secretaria" id="enlaces-secretaria">
+                        Secretaría
+                    </a>
+                    <ul class="lista-enlaces" id="list-mobile" style="display: none">
+                        <li>
+                            <a id="links-secretaria" class="secre-primero" href="acerca-de.html">
+                                Acerca de 
+                            </a>
+                        </li>
+                        <li>
+                            <a id="links-secretaria" href="directorio.html">
+                                Directorio
+                            </a>
+                        </li>
+                        <li>
+                            <a id="links-secretaria" href="http://www.finanzas.cdmx.gob.mx/secretaria/estructura">
+                                Estructura Orgánica
+                            </a>
+                        </li>
+                        <li>
+                            <a id="links-secretaria" href="http://www.finanzas.cdmx.gob.mx/secretaria/marco-normativo">
+                                Marco Normativo
+                            </a>
+                        </li>
+                        <li>
+                            <a id="links-secretaria" href="http://www.finanzas.cdmx.gob.mx/secretaria/transparencia">
+                                Transparencia
+                            </a>
+                        </li>
+                        <li>
+                            <a id="links-secretaria" class="secre-ultimo" href="http://www.finanzas.cdmx.gob.mx/contacto">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="finanzas-submenu">
+                    <a href="http://www.finanzas.cdmx.gob.mx/servicios" class="enlaces-secretaria">
+                        Servicios
+                    </a>
+                </div>
+                <div class="finanzas-submenu">
+                    <a href="http://www.finanzas.cdmx.gob.mx/programas" class="enlaces-secretaria">
+                        Programas
+                    </a>
+                </div>
+                <div class="finanzas-submenu" id="last-item">
+                    <a href="#" class="enlaces-secretaria" id="enlaces-notificaciones">
+                        Notificaciones
+                    </a>
+                    <ul class="lista-enlaces" id="list-mobile" style="display: none">
+                        <li>
+                            <a id="links-notificaciones" href="http://www.finanzas.cdmx.gob.mx/notificaciones/teso-subastas-cdmx">Teso-Subastas CDMX</a>
+                        </li>
+                        <li>
+                            <a id="links-notificaciones" href="http://www.finanzas.cdmx.gob.mx/notificaciones/remates-y-enajenaciones">Remates y Enajenaciones</a>
+                        </li>
+                        <li>
+                            <a id="links-notificaciones" href="http://www.finanzas.cdmx.gob.mx/notificaciones/licitaciones">Licitaciones</a>
+                        </li>
+                        <li>
+                            <a id="links-notificaciones" href="http://www.finanzas.cdmx.gob.mx/notificaciones/notificaciones-federales">Notificaciones Federales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	
+        <ul class="HeaderNav">
+            <div class="container">
+                <ul class="Header-container">
+                    <li class="HeaderNav-element Fastlink"><a href="http://transparencia.finanzas.cdmx.gob.mx">Transparencia</a></li>
+                    <li class="HeaderNav-element Fastlink"><a href="http://data.finanzas.cdmx.gob.mx/ssac/index.php">Atención Ciudadana</a></li>
+                    <li class="HeaderNav-element Fastlink"><a href="http://data.finanzas.cdmx.gob.mx/atencion_ciudadana/">Trámites y Servicios</a></li>
+                    <li class="HeaderNav-element selected"><a href="http://www.finanzas.cdmx.gob.mx">Inicio</a></li>
+                    <li class="HeaderNav-element dropdown">
+                        <a class="dropdown-toggle" href="http://www.finanzas.cdmx.gob.mx/secretaria" data-toggle="dropdown" aria-haspopup="false"
+                           aria-expanded="false">
+                            Secretaría
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="acerca-de.html">
+                                    Acerca de
+                                </a>
+                            </li>
+                            <li>
+                                <a href="directorio.html">
+                                    Directorio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/secretaria/estructura">
+                                    Estructura Orgánica
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/secretaria/marco-normativo">
+                                    Marco Normativo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/secretaria/transparencia">
+                                    Transparencia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/contacto">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="HeaderNav-element">
+                        <a href="http://www.finanzas.cdmx.gob.mx/servicios">
+                            Servicios
+                        </a>
+                    </li>
+                    <li class="HeaderNav-element">
+                        <a href="http://www.finanzas.cdmx.gob.mx/programas">
+                            Programas
+                        </a>
+                    </li>
+                    <li class="HeaderNav-element dropdown">
+                        <a class="dropdown-toggle" href="http://www.finanzas.cdmx.gob.mx/notificaciones" data-toggle="dropdown" aria-haspopup="false"
+                           aria-expanded="false">
+                            Notificaciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/teso-subastas-cdmx">
+                                    Teso-Subastas CDMX
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/remates-y-enajenaciones">
+                                    Remates y Enajenaciones
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/licitaciones">
+                                    Licitaciones
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/notificaciones-federales-por-estrados">
+                                    Notificaciones Federales por Estrados
+                                </a>
+                            </li>
+							   <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/notificaciones-federales-por-edictos">
+                                    Notificaciones Federales por Edictos
+                                </a>
+                            </li>
+							   <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/notificaciones-locales-por-estrados">
+                                    Notificaciones Locales por Estrados
+                                </a>
+                            </li>
+							   <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/notificaciones-locales-por-edictos">
+                                    Notificaciones Locales por Edictos
+                                </a>
+                            </li>
+									   <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/licitaciones-consolidadas">
+                                  Licitaciones consolidadas
+                                </a>
+                            </li>
+									   <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/listado-de-proveedores">
+                                 Listado de proveedores
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+</header>
+		
+<!-- Content -->
+<section id="contenido" class="home-section" style="background-color: #efefef;">
+    <div class="heading-about">
+        <div class="container">
+		
+			<!--//////////////////////////////////-->
+            <!--BANNERS PRIMARIOS Y REALIZAR PAGOS-->
+            <!--//////////////////////////////////-->
+			
+			<br><br>
+            <div class="col-lg-12" >
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">				
+							<div id="wowslider-container1">
+								<div class="ws_images">
+									 <ul>
+										<li><a href="https://s3.amazonaws.com/cdmxassets/media/Archivos+pdf/BOLETIN+007.pdf" target="_blank">
+											<img src="assets/slider/Supera_Gobierno.jpg" alt="Supera Gobierno de la CDMX ingresos recaudados" title="Supera Gobierno de la CDMX ingresos recaudados" id="wows1_1"/></a>
+										</li> 
+										<li><a href="https://s3.amazonaws.com/cdmxassets/media/Archivos+pdf/Boletin_25_04_19.pdf" target="_blank">
+											<img  src="assets/slider/Paga_Sin_Recargos.jpg" alt="Paga sin recargos" title="Paga sin recargos" id="wows1_2"/></a>
+										</li>
+										<li><a href="https://www.jefaturadegobierno.cdmx.gob.mx/storage/app/media/BOLETIN-05%20Pago%20tenencia.pdf" target="_blank">
+											<img src="assets/slider/Tenencia_2019.jpg" alt="Tenencia 2019" title="Tenencia 2019" id="wows1_2"/></a>
+										</li>
+										<li><a href="https://s3.amazonaws.com/cdmxassets/media/Archivos+pdf/Mapa-Ubicacion-oficinas.pdf" target="_blank">
+											<img src="assets/slider/Ubicacion_Oficinas.jpg" alt="Ubicación de Oficinas" title="Ubicación de Oficinas" id="wows1_3"/></a>
+										</li>
+										<li><a href="https://data.finanzas.cdmx.gob.mx/egresos/cp2018_19/" target="_blank">
+											<img src="assets/slider/Cuenta_Publica.jpg" alt="Cuenta Pública 2018" title="Cuenta Pública 2018" id="wows1_4"/></a>
+										</li>
+										<li><a href="https://maraton.cdmx.gob.mx/" target="_blank">
+											<img src="assets/slider/Maraton.jpg" alt=" Maratón" title=" Maratón" id="wows1_5"/></a>
+										</li>
+									</ul>
+								</div>
+								<div class="ws_bullets"><div>
+									<a href="#" title="Supera Gobierno de la CDMX ingresos recaudados"><span>
+									<img src="assets/slider/data1/tooltips/supera_gobierno.jpg" alt="Supera Gobierno de la CDMX ingresos recaudados"/>1</span></a>
+									<a href="#" title="Paga sin recargos"><span><img src="assets/slider/data1/tooltips/paga_recargos.jpg" alt="Paga sin recargos"/>2</span></a>
+									<a href="#" title="Tenencia 2019"><span><img src="assets/slider/data1/tooltips/tenencia_2019.jpg" alt="Tenencia 2019"/>3</span></a>
+									<a href="#" title="Ubicación de Oficinas"><span><img src="assets/slider/data1/tooltips/ubicacin_oficinas.jpg" alt="Ubicación de Oficinas"/>4</span></a>
+									<a href="#" title="Cuenta Pública 2018"><span><img src="assets/slider/data1/tooltips/pblica_2018.jpg" alt="Cuenta Pública 2018"/>5</span></a>
+									<a href="#" title=" Maratón"><span><img src="assets/slider/data1/tooltips/maratn.jpg" alt=" Maratón"/>6</span></a>
+								</div>
+							   </div>	
+							 </div>
+							
+							<br>
+							<br>
+						
+							<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+					</div>	
+                    <div class="col-sm-4">
+                        <div>
+							  <div style="width: 97%;" class="portfolio">
+								  <a href="https://data.finanzas.cdmx.gob.mx/ssac/index.php">
+                            <img src="assets/banners/Aviso_Importante.jpg" style="width:100%;"></a>
+                            <div class="card-block" style="height: 45px; overflow: hidden; border-color: #cacaca; border-style: solid; border-width: 1px 1px 1px 1px; background-color: #FFFFFF;">
+                                <p class="card-text"><h4 style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-weight: bold; text-transform: none; margin-left: 4%; margin-top: -3%; color: #333; font-size: 24px;">
+								<a href="https://data.finanzas.cdmx.gob.mx/ssac/index.php">Aviso Importante</a></h4></p>  
+                            </div>
+						</div> 
+					</div>
+					 <div style="width: 97%;" class="portfolio">
+                        <div style="margin-top: 2%;">
+							<a href="http://www.finanzas.cdmx.gob.mx/servicios-al-contribuyente/micrositios">
+                            <img src="assets/banners/Micrositios.jpg" alt="" style="width:100%;"></a>
+                        </div>
+					</div>
+                    </div>
+                </div>
+            </div>
+		
+        <!--////////////////////////////-->
+        <!--INVERSIONISTAS Y PROOVEDORES-->
+        <!--////////////////////////////-->
+        <div class="col-lg-12" style="margin-top: 2%;">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2 id="title_list_ip">Información Destacada</h2>
+               <ul class="list-group" style="color: #000000; font-size: 20px; font-weight: 500;">
+                        <li class="list-group-item" id="list_ip"><i class="fa fa-angle-right" id="flecha_list_ip">
+						<a href="http://www.finanzas.cdmx.gob.mx/servicios/servicio/presupuesto-2019"> 
+						</i>Presupuesto 2019</li>
+						</a>
+		
+                        <li class="list-group-item" id="list_ip"><i class="fa fa-angle-right" id="flecha_list_ip">
+						<a href="http://www.finanzas.cdmx.gob.mx/servicios/servicio/proyecto-paquete-economico-2019">
+						</i>Proyecto Paquete Económico 2019</li>
+						</a>
+					
+                        <li class="list-group-item" id="list_ip"><i class="fa fa-angle-right" id="flecha_list_ip">
+						<a href="https://data.finanzas.cdmx.gob.mx/inv/index.html">
+						</i>Inversionistas</li>
+				        </a>
+				
+                        <li class="list-group-item" id="list_ip"><i class="fa fa-angle-right" id="flecha_list_ip">
+					    <a href="http://www.finanzas.cdmx.gob.mx/servicios/servicio/consulta-de-informacion-para-calculo-de-pagos">
+						</i>Información para Cálculo de Pagos</li>
+			            </a>
+                    </ul>
+                </div>
+                   <div class="col-sm-6">
+                   <h2 id="title_list_ip">Consulta</h2>
+                    <ul class="list-group" style="color: #000000; font-size: 20px; font-weight: 500;">
+                        <li class="list-group-item" id="list_ip"><i class="fa fa-angle-right" id="flecha_list_ip">
+							<a href="https://data.finanzas.cdmx.gob.mx/avisos/isr.html"> 
+							</i> Repecos, intermedios y enajenación</li>
+						    </a>
+                    </ul>
+            <ul class="list-group" style="color: #000000; font-size: 20px; font-weight: 500;">
+                        <li class="list-group-item" id="list_ip"><i class="fa fa-angle-right" id="flecha_list_ip">
+							<a href="https://data.finanzas.cdmx.gob.mx/faq/"> 
+							</i>Preguntas frecuentes</li>
+						    </a>
+                    </ul>
+            <ul class="list-group" style="color: #000000; font-size: 20px; font-weight: 500;">
+                        <li class="list-group-item" id="list_ip"><i class="fa fa-angle-right" id="flecha_list_ip">
+							<a href="https://data.finanzas.cdmx.gob.mx/fiscal/"> 
+							</i>Transparencia Fiscal</li>
+						    </a>
+                    </ul>
+               </div>
+            </div>
+		</div>		
+        <!--///////////////////-->
+        <!--BANNERS SECUNDARIOS-->
+        <!--///////////////////-->
+        <br>
+ <h2 style="color: #333333;  font-weight: bold; margin-left: -1px;">Realizar pagos y trámites en línea</h2>
+
+        <div class="col-lg-12" style="margin-top: 3%; margin-left: 15px; padding-right: 45px; ">
+           <div class="row">
+             
+				 <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+				    <div  class="blog-img">
+						<a href="http://ovica.finanzas.cdmx.gob.mx/wfrmInformacionGeneralPago.aspx" target="_blank">
+						<img src="assets/banners/Predial.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Predial</h5></p>
+						</div>
+						</a>
+					</div>
+				 </div>
+
+				 <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+				   <div class="blog-img">
+						<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/Front_ten/" target="_blank"> 
+						<img src="assets/banners/Tenencia.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Tenencia</h5></p>
+						</div>
+						</a>
+					</div>
+				 </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+				  <div class="blog-img">
+						<a href="https://www.sacmex.cdmx.gob.mx/" target="_blank">
+						<img src="assets/banners/Agua.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Agua</h5></p>
+						</div>
+						</a>
+				  </div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+				  <div class="blog-img">
+						<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/conceptos.php" target="_blank"> 
+						<img src="assets/banners/Transito.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Tránsito</h5></p>
+						</div>
+						</a>
+				  </div>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-12" style="margin-top: 1%; margin-left: 15px; padding-right: 45px;">
+            <div class="row">
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+				   <div class="blog-img">
+						<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/soloCivil.php" target="_blank"> 
+						<img src="assets/banners/Registro_Civil.jpg" alt="Chicago" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Registro Civil</h5></p>
+						</div>
+						</a>
+				   </div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/soloPolicia.php" target="_blank"> 
+						<img src="assets/banners/Policia.jpg" alt="Chicago" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Policía</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/soloNotarias.php" target="_blank"> 
+						<img src="assets/banners/Notaria.jpg" alt="Chicago" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Notaría</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/soloDerVar.php" target="_blank"> 
+						<img src="assets/banners/Derechos_Varios.jpg" alt="Chicago" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h4 id="letra_banner">Derechos varios</h4></p>
+						</div>
+						<a/>
+                    </div>
+			   </div>
+            </div>
+        </div>
+
+       <div class="col-lg-12" style="margin-top: 1%; margin-left: 15px; padding-right: 45px; ">
+            <div class="row">
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/soloPATRS.php" target="_blank"> 
+						<img src="assets/banners/Patras.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">PATRS</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="https://innovacion.finanzas.cdmx.gob.mx/siscon/" target="_blank"> 
+						<img src="assets/banners/Impuesto.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Impuesto Sobre Nómina</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+					<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/soloIsan.php" target="_blank"> 
+						<img src="assets/banners/Impuestos_Automoviles.jpg"alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Impuestos sobre automóviles nuevos</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/padrones/index.php?id=98" target="_blank"> 
+						<img src="assets/banners/Rproduccion_Servicio.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Impuesto especial sobre producción y servicio</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+            </div>
+        </div>
+
+  <div class="col-lg-12" style="margin-top: 1%; margin-left: 15px; padding-right: 45px;">
+            <div class="row">
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+					<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/soloOtrasC.php" target="_blank"> 
+						<img src="assets/banners/Otras_Contribuciones.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Otras Contribuciones</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="https://data.finanzas.cdmx.gob.mx/formato_lc/certificacion/#" target="_blank">
+						<img src="assets/banners/Certificaciones_constancias.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Certificaciones y constancias de adeudo</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="http://innovacion.finanzas.cdmx.gob.mx/devoluciones/requisitos.html" target="_blank">
+						<img src="assets/banners/Sistema_devoluciones.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Sistema de devoluciones</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="https://facturatcdmx.facturaxion.com/?parametroliga=demo" target="_blank">
+						<img src="assets/banners/Facturación_electrónica.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Facturación electrónica</h5></p>
+						</div>
+						</a>
+					</div>
+				</div>
+           </div>
+        </div>
+
+	 <h2 style="color: #333333;  font-weight: bold; margin-left: -1px;">Servicios</h2>
+  <div class="col-lg-12" style="margin-top: 1%; margin-left: 15px; padding-right: 45px;">
+            <div class="row">
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="https://s3.amazonaws.com/cdmxassets/media/Archivos+pdf/Directorio_areas_web.pdf" target="_blank"> 
+						<img src="assets/banners/Ubicación_Pagos.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Ubicación Pagos y Trámites</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="http://www.finanzas.cdmx.gob.mx/servicios/servicio/impresion-de-los-formatos-de-inscripcion-o-aviso-de-modificacion-de-datos-al-padron-de-contribuyentes" target="_blank"> 
+						<img src="assets/banners/Formatos_trámites.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Formatos trámites</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="http://www.finanzas.cdmx.gob.mx/servicios/servicio/consulta-de-pagos-y-adeudos" target="_blank"> 
+						<img src="assets/banners/Consulta_pagos.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+						    <p class="card-text"><h5 id="letra_banner">Consulta de pagos y adeudo</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="http://www.finanzas.cdmx.gob.mx/servicios/servicio/servicios-de-control-vehicular" target="_blank"> 
+						<img src="assets/banners/Control_Vehícular.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+						    <p class="card-text"><h5 id="letra_banner">Control Vehícular 2019</h5></p
+						></div>
+						</a>
+					</div>
+				</div>
+           </div>
+        </div>
+
+  <div class="col-lg-12" style="margin-top: 1%; margin-left: 15px; padding-right: 45px;">
+            <div class="row">
+				
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="https://tianguisdigital.cdmx.gob.mx/proveedores/" target="_blank"> 
+						<img src="assets/banners/Tianguis_Digital.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Tianguis Digital</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="http://www.atencionciudadana.cdmx.gob.mx/SSAC_Solicitud?id_procedencia=1" target="_blank"> 
+						<img src="assets/banners/Atención_Ciudadana.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">Atención Ciudadana</h5></p>
+						</div>
+						</a>
+					</div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="http://www.finanzas.cdmx.gob.mx/tesoreria-app" target="_blank"> 
+						<img src="assets/banners/APP_Tesorería.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+						    <p class="card-text"><h5 id="letra_banner">APP Tesorería CDMX</h5></p>
+						</div>
+						</a>
+				    </div>
+                </div>
+
+                <div class="col-sm-3" style="padding-left: 0px; padding-right: 0px;">
+					<div class="blog-img">
+						<a href="http://innovacion.finanzas.cdmx.gob.mx/subastas/" target="_blank"> 
+						<img src="assets/banners/TESO_SUBASTAS.jpg" alt="" id="banner_s">
+						<div class="card-block" id="card_s">
+							<p class="card-text"><h5 id="letra_banner">TESO SUBASTAS</h5></p>
+						</div>
+						</a>
+					</div>
+				</div>
+           </section>
+
+    <!-- ***** Service Area Start ***** -->
+  <div style="background-color:#efefef;"  class="col-lg-12">
+	  
+        <div class="workflow-img">
+			<img src="assets/work-progress3.png" alt="">
+		</div>  
+        <div class="workflow-slides-area">
+            <div class="container">
+                <div class="row">
+			      <h2 style="color: #333333;  font-weight: bold; margin-left:15px;">Mantente informado</h2>
+                    <div class="col-12">		
+						<br>
+                        <div class="mosh-workflow-slides owl-carousel">
+                        
+                            <div class="single-workflow-area d-flex">
+							     <img src="assets/img/Proyectos_Inversion.jpg">
+                            </div>
+                     
+                            <div class="single-workflow-area d-flex">
+							     <img src="assets/img/thumb.jpg">
+                            </div>
+                      
+                            <div class="single-workflow-area d-flex">
+							     <img src="assets/img/evaluan_proyectos.jpg">
+                            </div>
+           
+                            <div class="single-workflow-area d-flex">
+								 <img src="assets/img/Madres.jpg">
+                            </div>
+							
+							<div class="single-workflow-area d-flex">
+								 <img src="assets/img/Porrua2019.jpg">
+                            </div>
+							
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+<!-- footer -->
+<footer  class="Footer">
+    <div  class="Footer-child">
+        <div class="container" id="container-footer">
+            <div class="Footer-section--c4">
+                <div class="Footer-card">
+                    <div class="Footer-card-logo">
+						<a href="http://www.finanzas.cdmx.gob.mx/">
+                        <img src="assets/Logo_Generico_F.png" alt="Logo de la Dependencia">
+						</a>
+                    </div>
+                    <div  class="Footer-card-data">
+                        <div class="Footer-title">	
+                            <h3>
+                                Atención ciudadana
+                            </h3>
+                        </div>
+                        <div class="Footer-card-address">
+                            <div class="Text">
+                                <strong>Dirección:</strong> Calle Plaza de la Constitución 1
+Colonia Centro, Delegación Cuauhtémoc C.P. 06000, Ciudad de México
+                            </div>				
+                        </div>
+                    </div>
+                </div>
+                <ul class="Footer-social">
+                    <li class="Footer-title">
+                        <h3>
+                            Redes sociales
+                        </h3>
+                    </li>
+                    <li class="FooterSocial-item">
+                        <a href="https://es-es.facebook.com/FinanzasCDMX?sk=wall" target="_blank"><i class="fa fa-facebook" id="facebook"></i></a>
+                    </li>
+                    <li class="FooterSocial-item">
+                        <a href="https://twitter.com/Finanzas_CDMX" target="_blank"><i class="fa fa-twitter" id="twitter"></i></a>
+                    </li>
+                    <li class="FooterSocial-item">
+                        <a href="https://www.youtube.com/channel/UC2wcbLYzyWq5kL2t0M2MrFA?feature=guide" target="_blank"><i class="fa fa-youtube" id="youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div  class="Footer-section--c3">
+                <div class="Footer-links">
+					
+                    <ul class="Footer-links-content">
+                        <li class="Footer-title">
+                            <h3>
+                                Navegación
+                            </h3>
+                        </li>
+                        <li class="Footer-links-link"><a href="http://www.finanzas.cdmx.gob.mx">Inicio</a></li>
+
+                        <li class="Footer-links-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/secretaria">
+                                Secretaría
+                            </a>
+                        </li>
+                        <li class="Footer-links-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/servicios">
+                                Servicios
+                            </a>
+                        </li>
+
+                        <li class="Footer-links-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/programas">
+                                Programas
+                            </a>
+                        </li>
+
+                        <li class="Footer-links-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/notificaciones">
+                                Notificaciones
+                            </a>
+                        </li>
+                        <li class="Footer-links-link"><a href="http://www.finanzas.cdmx.gob.mx/secretaria/transparencia">Transparencia</a></li>
+                    </ul>
+					
+                </div>
+            </div>
+            <div class="Footer-section--c3">
+                <div class="Footer-links">
+                    <ul class="Footer-links-content">
+                        <li class="Footer-title">
+                            <h3>
+                                Sitios relacionados
+                            </h3>
+                        </li>
+                        <li class="FooterLinks-link">
+                            <a href="http://www.data.consejeria.cdmx.gob.mx/index.php/gaceta"  target=_blank>
+                                Gaceta Oficial de la Ciudad de México
+                            </a>
+                        </li>
+                        <li class="FooterLinks-link">
+                            <a href="http://www.fidere3.df.gob.mx/"  target=_blank>
+                                Fidere
+                            </a>
+                        </li>
+                        <li class="FooterLinks-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/servicios-al-contribuyente/constancia-de-credito-simple" >
+                                Contratación de Crédito Simple 2016
+                            </a>
+                        </li>
+						    <li class="FooterLinks-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/credito-simple-2017" >
+                               Contratación de Crédito Simple 2017
+                            </a>
+                        </li>
+                        <li class="FooterLinks-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/storage/app/uploads/public/585/c35/b5e/585c35b5e8c44585173852.pdf" >
+                                Contrato de Crédito HSBC 2016
+                            </a>
+                        </li>
+						     <li class="FooterLinks-link">
+                            <a href="https://data.finanzas.cdmx.gob.mx/programas_anuales_evaluacion.html" >
+                               Programas Anuales de Evaluación
+                            </a>
+                        </li>
+						     <li class="FooterLinks-link">
+                            <a href="https://data.finanzas.cdmx.gob.mx/proveedores.html" >
+                                Procedimiento para la solicitud
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+				
+            <div class="Footer-section--c2">
+                <div class="Footer-banners">
+                   <div class="Footer-banners-item">
+					  <div class="layer-agileits2">
+                        <a href="http://transparencia.finanzas.cdmx.gob.mx/"target="_blank">
+                         <img width="390" height="115" src="assets/Tenencia/tranp-saf+copia.jpg" alt="Ventanilla Única Delegacional"/>
+						</a>
+					 </div>	
+                  </div>
+                  <div class="Footer-banners-item">
+					<div class="layer-agileits2">
+                        <a href="https://www.transparencia.cdmx.gob.mx/oficialia-mayor-del-gobierno-de-la-ciudad-de-mexico"target="_blank">
+                            <img width="320" height="115" src="assets/Tenencia/transp-om.jpg" alt="Centros de Servicios y Atención Ciudadana (CESAC)"/>
+                        </a>
+						</div>
+                    </div>
+                    <div class="Footer-banners-item">
+					  <div class="layer-agileits2">
+                        <a href="http://www.datosabiertos.cdmx.gob.mx"target="_blank">
+                            <img width="320" height="115" src="assets/Tenencia/datos_abiertos.jpg" alt="Contrataciones Abiertas"/>
+                        </a>		   
+						</div>	  		   
+                    </div>
+                    <div class="Footer-banners-item">
+					   <div class="layer-agileits2">
+                        <a href="http://www.contratosabiertos.cdmx.gob.mx/"
+                           target="_blank">
+                            <img width="320" height="115" src="assets/Tenencia/contrataciones.jpg" alt="Contrataciones Abiertas"/>
+                        </a>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div class="Footer-child">
+        <div class="container">	
+            <div class="Footer-info">	
+                <div class="Footer-info-link">
+                    <b>
+                    CMS CDMX v1.18.0 2019
+                    </b>
+                </div>
+                <div class="Footer-info-link">
+                    <a href="http://www.finanzas.cdmx.gob.mx/terminos-y-condiciones">
+                        Términos y Condiciones
+				    </a>
+                </div>
+                <div class="Footer-info-link">
+                    <a href="http://www.finanzas.cdmx.gob.mx/terminos-y-condiciones#Datos-personales">
+                        Política de privacidad
+                    </a>
+                </div>
+                <div  class="Footer-info-link">
+                    <a href="http://www.cdmx.gob.mx/lgacdmx">
+                        Licencia de Gobierno Abierto CDMX
+                    </a>
+                </div>
+			</div>	
+        </div>
+    </div>					
+</footer>
+
+
+
+
+
+
+
+
+
+<div style="margin-right: -20px; margin-bottom:-20px;" id="gotop" fa fa-angle-double-up> <i class="fa fa-angle-double-up"></i> </div>
+
+
+
+
+<script src="js/jquery.gotop.js"></script>
+
+    <!-- slider js -->
+<script type="text/javascript" src="slider/wowslider.js"></script>
+<script type="text/javascript" src="slider/script.js"></script>
+
+    <!-- plugins js -->
+<script src="js/plugins.js"></script>
+    <!-- Active js -->
+<script src="js/active.js"></script>
+
+<script>
+$('#gotop').gotop({
+	
+  customHtml: '<i class="fa fa-angle-up fa-2x"></i>',
+  bottom: '2em',
+  right: '2em'
+});
+</script>
+
+</body>
+</html>gotop

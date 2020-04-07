@@ -1,0 +1,89 @@
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+*::after, *::before {
+  content: '';
+}
+
+
+@media only screen and (min-width: 1024px) {
+  body.overlay-layer::after {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+  }
+}
+
+a {
+  color: #31b007;
+  text-decoration: none;
+}
+
+img {
+  max-width: 20%;
+}
+
+.cd-container {
+
+  width: 50%;
+  max-width: 10px;
+  margin: 0 auto;
+}
+.cd-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.cd-items {
+  padding: 1em 0;
+}
+@media only screen and (min-width: 550px) {
+  .cd-items {
+    padding: 2em 0 0;
+  }
+}
+@media only screen and (min-width: 550px) {
+  .cd-items {
+    padding: 4em 0 0;
+  }
+}
+
+.cd-item {
+  position: relative;
+  margin: 0 0 1em;
+}
+.cd-item > img {
+  display: block;
+  width: 100%;
+  padding-bottom: 15px;
+}
+@media only screen and (min-width: 550px) {
+  .cd-item {
+    width: 2%;
+    float: left;
+    margin: 0 4% 2em 0;
+  }
+  .cd-item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .cd-item {
+    width: 22%;
+    float: left;
+    margin: 0 4% 2.8em 0;
+  }
+  .cd-item:nth-child(2n) {
+    margin-right: 4%;
+  }
+  .cd-item:nth-child(4n) {
+    margin-right: 0;
+  }
+}

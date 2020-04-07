@@ -1,0 +1,1000 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Secretaria de Finanzas de la Ciudad de México</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Optional theme -->
+	
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+    <!-- Styles -->
+    <link rel="stylesheet" href="vendors/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/favicons.png">
+	<link href="styles/blog-img.css" rel="stylesheet" type="text/css">
+	
+	<!-- Styles -->
+	<link href="styles/style.css" rel="stylesheet" type="text/css">
+
+   <!-- Javascript -->
+    <script
+  	src="http://code.jquery.com/jquery-3.3.0.js" integrity="sha256-TFWSuDJt6kS+huV+vVlyV1jM3dwGdeNWqezhTxXB/X8="
+  	crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin=" anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="vendors/bootstrap/dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/dropdown.js"></script>
+    <script type="text/javascript" src="slider/jquery.js"></script>
+	
+    <link rel="stylesheet" href="css/item.css"> 
+
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>  
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,700'>
+
+    <link rel="stylesheet" href="css/featured.css">
+	
+</head>	
+<body>
+<header class="Header">
+	
+    <div class="Header-top">
+        <div class="container">
+            <div class="row">
+                <div class="Header-content">		
+                    <div class="HeaderLogo">
+                        <a href="http://www.finanzas.cdmx.gob.mx">
+							<img class="Logo-cdmx" src="assets/Logo_CDMX.png"/>
+                            <img class="Logo-dep" src="assets/Logo_SEFIN.png"/>	
+                        </a>
+                    </div>
+					 <div class="HeaderSearch">
+                        <form action="#" method="get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Buscar en el sitio" name="q">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="submit">
+	                                    <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </form>
+					</div>			
+                </div>
+                <div class="Header-links">
+                    <ul class="Items">
+                      <li><a href="http://www.cdmx.gob.mx" target="_blank">CDMX</a> 
+						  <a href="http://www.cdmx.gob.mx/gobierno/gabinete/secretarias" target="_blank">Secretarías</a> / <strong>SAF</strong></li>
+                      <li><a href="http://transparencia.finanzas.cdmx.gob.mx" target="_blank">Transparencia</a></li>
+                        <li><a href="http://data.finanzas.cdmx.gob.mx/ssac/index.php" target="_blank">Atención Ciudadana</a></li>
+                        <li><a href="http://data.finanzas.cdmx.gob.mx/atencion_ciudadana/" target="_blank">Trámites y Servicios</a></li>
+                    </ul>
+                </div>		
+            </div>
+        </div>
+    </div>
+    <div class="HeaderMenu">
+        <div class="HeaderNav-mobile">
+            <a href="#" class="Mobile-actions dropdown-toggle parent" id="drop-header" data-toggle="dropdown" aria-haspopup="false"
+               aria-expanded="false">
+                Menú
+            </a>
+		      <div class="Header-finder">
+            <a href="http://www.finanzas.cdmx.gob.mx/#" class="Mobile-actions">
+                Buscar
+            </a>
+        </div>	
+            <div class="dropdown-menu child" id="mobile-menu">
+                <div class="only-mobile">
+					
+                    <a id="enlaces-sefin" href="http://transparencia.finanzas.cdmx.gob.mx" target="_blank">
+                        <i class="fa fa-bolt" aria-hidden="true"></i> Transparencia
+                    </a>
+					
+			
+                    <a id="enlaces-sefin" href="http://data.finanzas.cdmx.gob.mx/ssac/index.php" target="_blank">
+                        <i class="fa fa-bolt" aria-hidden="true"></i> Atención Ciudadana
+					</a>
+					
+                    <a id="enlaces-sefin" href="http://data.finanzas.cdmx.gob.mx/atencion_ciudadana/" target="_blank">
+                        <i class="fa fa-bolt" aria-hidden="true"></i> Trámites y Servicios
+                    </a>
+					
+                </div>
+                <div class="finanzas-submenu">
+                    <a id="inicio" class="enlaces-secretaria" href="index.html">
+                        Inicio
+                    </a>
+                </div>
+                <div class="finanzas-submenu">
+                    <a href="#" class="enlaces-secretaria" id="enlaces-secretaria">
+                        Secretaría
+                    </a>
+                    <ul class="lista-enlaces" id="list-mobile" style="display: none">
+                        <li>
+                            <a id="links-secretaria" class="secre-primero" href="acerca-de.html">
+                                Acerca de 
+                            </a>
+                        </li>
+                        <li>
+                            <a id="links-secretaria" href="directorio.html">
+                                Directorio
+                            </a>
+                        </li>
+                        <li>
+                            <a id="links-secretaria" href="http://www.finanzas.cdmx.gob.mx/secretaria/estructura">
+                                Estructura Orgánica
+                            </a>
+                        </li>
+                        <li>
+                            <a id="links-secretaria" href="http://www.finanzas.cdmx.gob.mx/secretaria/marco-normativo">
+                                Marco Normativo
+                            </a>
+                        </li>
+                        <li>
+                            <a id="links-secretaria" href="http://www.finanzas.cdmx.gob.mx/secretaria/transparencia">
+                                Transparencia
+                            </a>
+                        </li>
+                        <li>
+                            <a id="links-secretaria" class="secre-ultimo" href="http://www.finanzas.cdmx.gob.mx/contacto">
+                                Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="finanzas-submenu">
+                    <a href="http://www.finanzas.cdmx.gob.mx/servicios" class="enlaces-secretaria">
+                        Servicios
+                    </a>
+                </div>
+                <div class="finanzas-submenu">
+                    <a href="http://www.finanzas.cdmx.gob.mx/programas" class="enlaces-secretaria">
+                        Programas
+                    </a>
+                </div>
+                <div class="finanzas-submenu" id="last-item">
+                    <a href="#" class="enlaces-secretaria" id="enlaces-notificaciones">
+                        Notificaciones
+                    </a>
+                    <ul class="lista-enlaces" id="list-mobile" style="display: none">
+                        <li>
+                            <a id="links-notificaciones" href="http://www.finanzas.cdmx.gob.mx/notificaciones/teso-subastas-cdmx">Teso-Subastas CDMX</a>
+                        </li>
+                        <li>
+                            <a id="links-notificaciones" href="http://www.finanzas.cdmx.gob.mx/notificaciones/remates-y-enajenaciones">Remates y Enajenaciones</a>
+                        </li>
+                        <li>
+                            <a id="links-notificaciones" href="http://www.finanzas.cdmx.gob.mx/notificaciones/licitaciones">Licitaciones</a>
+                        </li>
+                        <li>
+                            <a id="links-notificaciones" href="http://www.finanzas.cdmx.gob.mx/notificaciones/notificaciones-federales">Notificaciones Federales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	
+        <ul class="HeaderNav">
+            <div class="container">
+                <ul class="Header-container">
+                    <li class="HeaderNav-element Fastlink"><a href="http://transparencia.finanzas.cdmx.gob.mx">Transparencia</a></li>
+                    <li class="HeaderNav-element Fastlink"><a href="http://data.finanzas.cdmx.gob.mx/ssac/index.php">Atención Ciudadana</a></li>
+                    <li class="HeaderNav-element Fastlink"><a href="http://data.finanzas.cdmx.gob.mx/atencion_ciudadana/">Trámites y Servicios</a></li>
+                    <li class="HeaderNav-element selected"><a href="index.html">Inicio</a></li>
+                    <li class="HeaderNav-element dropdown">
+                        <a class="dropdown-toggle" href="http://www.finanzas.cdmx.gob.mx/secretaria" data-toggle="dropdown" aria-haspopup="false"
+                           aria-expanded="false">
+                            Secretaría
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="acerca-de.html">
+                                    Acerca de
+                                </a>
+                            </li>
+                            <li>
+                                <a href="directorio.html">
+                                    Directorio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/secretaria/estructura">
+                                    Estructura Orgánica
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/secretaria/marco-normativo">
+                                    Marco Normativo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/secretaria/transparencia">
+                                    Transparencia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/contacto">
+                                    Contacto
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="HeaderNav-element">
+                        <a href="http://www.finanzas.cdmx.gob.mx/servicios">
+                            Servicios
+                        </a>
+                    </li>
+                    <li class="HeaderNav-element">
+                        <a href="http://www.finanzas.cdmx.gob.mx/programas">
+                            Programas
+                        </a>
+                    </li>
+                    <li class="HeaderNav-element dropdown">
+                        <a class="dropdown-toggle" href="http://www.finanzas.cdmx.gob.mx/notificaciones" data-toggle="dropdown" aria-haspopup="false"
+                           aria-expanded="false">
+                            Notificaciones
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/teso-subastas-cdmx">
+                                    Teso-Subastas CDMX
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/remates-y-enajenaciones">
+                                    Remates y Enajenaciones
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/licitaciones">
+                                    Licitaciones
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/notificaciones-federales-por-estrados">
+                                    Notificaciones Federales por Estrados
+                                </a>
+                            </li>
+							   <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/notificaciones-federales-por-edictos">
+                                    Notificaciones Federales por Edictos
+                                </a>
+                            </li>
+							   <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/notificaciones-locales-por-estrados">
+                                    Notificaciones Locales por Estrados
+                                </a>
+                            </li>
+							   <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/notificaciones-locales-por-edictos">
+                                    Notificaciones Locales por Edictos
+                                </a>
+                            </li>
+									   <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/licitaciones-consolidadas">
+                                  Licitaciones consolidadas
+                                </a>
+                            </li>
+									   <li>
+                                <a href="http://www.finanzas.cdmx.gob.mx/notificaciones/listado-de-proveedores">
+                                 Listado de proveedores
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </ul>
+    </div>
+</header>
+	
+	<main>
+    <div  class="container">	
+  <div  class="Sidebar">
+<div style="padding-bottom:10px;" id="Sidebar-nav">
+    <div class="Sidebar-heading">
+        <a style="color: #000000;"  class="Sidebar-title" href="http://www.finanzas.cdmx.gob.mx/secretaria">
+            <div class="Title">
+                <h2>
+                    Secretaría
+                </h2>
+            </div>
+        </a>
+        <a data-toggle="collapse" data-parent="#Sidebar-nav" href="http://www.finanzas.cdmx.gob.mx/secretaria/acerca-de#Sidebar-nav-body" aria-expanded="true" aria-controls="collapseSidebar" class="Sidebar-action">
+        </a>
+    </div>
+    <div class="Sidebar-body collapse in" id="Sidebar-nav-body" aria-expanded="true" style="">
+        <ul class="Sidebar-nav-items">
+                        <li class="Link-navigation active">
+                <a style="color: #000000;"  href="http://www.finanzas.cdmx.gob.mx/secretaria/acerca-de">
+        Acerca de
+    </a>
+</li>
+                        <li class="Link-navigation ">
+                <a style="color: #000000;"  href="directorio.html">
+        Directorio
+    </a>
+</li>
+                        <li class="Link-navigation ">
+                <a style="color: #000000;"  href="http://www.finanzas.cdmx.gob.mx/secretaria/estructura">
+        Estructura Orgánica
+    </a>
+</li>
+                        <li class="Link-navigation ">
+                <a style="color: #000000;"  href="http://www.finanzas.cdmx.gob.mx/secretaria/marco-normativo">
+        Marco Normativo
+    </a>
+</li>
+                        <li class="Link-navigation ">
+                <a style="color: #000000;"  href="http://www.finanzas.cdmx.gob.mx/secretaria/transparencia">
+        Transparencia
+    </a>
+</li>
+                        <li class="Link-navigation ">
+                <a style="color: #000000;"  href="http://www.finanzas.cdmx.gob.mx/contacto">
+        Contacto
+    </a>
+</li>
+        </ul>
+    </div>
+
+</div>     
+	   
+</div>
+
+<div class="Sidebar-nav">                             
+<div class="ListDirectorio-Component">
+    <div class="Panel-elements Filters">
+        <div style="color: #000000;" class="Title">
+            <h3>
+                Secretaría de Finanzas de la CDMX
+            </h3>
+        </div>
+        </div>
+
+    <div class="Panel-functions Share">
+    <div class="Panel-functions-share">
+        <div class="Panel-functions-label">
+            Compartir
+        </div>
+        <div class="Panel-functions-buttons">
+
+            <a href="mailto:?subject=Te%20comparto%20el%20sigueinte%20enlace&amp;body=Entra%20a%20Secretar%C3%ADa%20de%20Finanzas%20de%20la%20CDMX%20http://www.finanzas.cdmx.gob.mx/secretaria/directorio" target="_blank" class="Button-icon">
+                <i class="fa fa-envelope"></i>
+            </a>
+            <a href="http://twitter.com/share?url=http://www.finanzas.cdmx.gob.mx/secretaria/directorio" target="_blank" class="Button-icon">
+                <i class="fa fa-twitter"></i>
+            </a>
+            <a href="http://www.facebook.com/sharer.php?u=http://www.finanzas.cdmx.gob.mx/secretaria/directorio" target="_blank" class="Button-icon">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="whatsapp://send?text=http://www.finanzas.cdmx.gob.mx/secretaria/directorio" target="_blank" class="Button-icon MobileDevices">
+                <i class="fa fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+    <div class="Panel-functions-print">
+        <div class="Panel-functions-label">
+            Imprimir
+        </div>
+        <div class="Panel-functions-buttons">
+            <a href="javascript:window.print();" class="Button-icon">
+                <i class="fa fa-print"></i>
+            </a>
+        </div>
+    </div>
+</div>	
+	  
+<div class="Sidebar-nav">                             
+<div class="ListDirectorio-Component">
+    <div class="Panel-elements Filters">
+        <div style="color: #000000;" class="Title">
+            <h3>
+                Estructura orgánica
+            </h3>
+        </div>
+    </div>
+    <div class="container"> 
+	  <div class="col-md-12 col-sm-12">
+        <ul class="nav nav-tabs fancyTabs" role="tablist">
+                    <li class="tab fancyTab active">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>	
+                        <a id="tab0" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab" tabindex="0">
+	                    <img src="assets/cdmx.jpg">
+					    <h3 class="hidden-xs">Acerca</h3>
+						</a>
+                    	<div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab1" href="#tabBody1" role="tab" aria-controls="tabBody1" aria-selected="true" data-toggle="tab" tabindex="0">
+						<img src="assets/cdmx.jpg">
+						<h3 class="hidden-xs">Objetivos</h3></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab2" href="#tabBody2" role="tab" aria-controls="tabBody2" aria-selected="true" data-toggle="tab" tabindex="0">
+					    <img src="assets/cdmx.jpg">
+						<h3 class="hidden-xs">
+						Funciones
+							</h3></a>
+                        <div class="whiteBlock"></div>
+                    </li>
+                    
+                    <li class="tab fancyTab">
+                    <div class="arrow-down"><div class="arrow-down-inner"></div></div>
+                        <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab" tabindex="0">
+                        <img src="assets/cdmx.jpg">
+						<h3 class="hidden-xs">
+                        Titular
+					    </h3></a>
+                        <div class="whiteBlock"></div>
+                    </li> 
+        </ul>
+        <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+                    <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false" tabindex="0">
+                        <div>
+                        	<div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h1>Acerca</h1>
+                                    <br>
+									<p>La Secretaría Administración y Finanzas de la Ciudad de México de conformidad con lo estipulado en el artículo 27 de la Ley Orgánica del Poder Ejecutivo y de la Administración Pública de la Ciudad de México vigente, le compete el despacho en materias: de desarrollo de políticas de ingresos y administración tributaria, la programación, presupuestación y evaluación del gasto público de la Ciudad de México. Compete también a esta Secretaría la administración, ingreso y desarrollo del capital humano y los recursos de la Administración Pública de esta Ciudad capital, así como representar el interés de la misma en controversias fiscales y en toda clase de procedimientos administrativos ante los tribunales en los que se controvierta el interés fiscal de la Entidad. Para el ejercicio de sus atribuciones la Secretaría se auxilia de las siguientes unidades administrativas:	
+
+									<li>Subsecretaría de Egresos.</li>
+									<li>Tesorería de la Ciudad de México.</li>
+									<li>Procuraduría Fiscal de la Ciudad de México. </li>
+									<li>Subsecretaría de Administración y Capital Humano.</li>
+									<li>Dirección General de Administración y Finanzas de la Secretaría de Administración y Finanzas.</li>
+									<li>Dirección General de Administración Financiera.</li>
+									<li>Dirección General de Administración de Personal y Uninómina. </li>
+									<li>Dirección General de Política y Relaciones Laborales.</li>
+									<li>Dirección General de Tecnologías y Comunicaciones.</li>
+									<li>Coordinación General de Evaluación, Modernización y Desarrollo Administrativo.</li>
+									<li>Dirección General de Recursos Materiales y Servicios Generales.</li>
+									<li>Dirección General de Patrimonio Inmobiliario.</li>
+									<li>Coordinación General de Comunicación Ciudadana. </li>
+									</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                            	
+                                <div class="col-md-12">
+                        			<h1>Objetivos</h1>
+									<br>
+                                    <p>La Secretaría de Administración y Finanzas de la Ciudad de México tiene como principal interés dirigir la política económica del Gobierno de la ciudad en materia financiera, fiscal, de gasto, de ingreso y deuda pública, con el propósito de fortalecer a esta Ciudad capital con crecimiento económico de calidad, equitativo, incluyente y sostenido.</p>
+                                   
+                                </div>
+                            </div>
+                    </div>
+                    <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+                        <div class="row">
+                                <div class="col-md-12">
+                        			<h1>
+                                    Funciones
+                                    </h1>
+									<br>
+                                    <div class="Text">
+						<p style="text-align: justify;">De acuerdo al Artículo 27 de la Ley Orgánica del Poder Ejecutivo y de la Administración Pública de la Ciudad de México vigente, a la Secretaría de Administración y Finanzas le competen las siguientes atribuciones:</p>
+
+						<p style="text-align: justify;">I. Elaborar el presupuesto de ingresos de la Ciudad que servirá de base para la formulación de la iniciativa de Ley de Ingresos de la Ciudad de México;&nbsp;</p>
+
+						<p style="text-align: justify;">II. Formular y someter a la consideración de la persona titular de la Jefatura de Gobierno el proyecto de los montos de endeudamiento que deben incluirse en la Ley de Ingresos, necesarios para el financiamiento del presupuesto;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">III. Recaudar, cobrar y administrar los impuestos, derechos, contribuciones de mejoras, productos, aprovechamientos y demás ingresos a que tenga derecho la Ciudad en los términos de las leyes aplicables;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">IV. Ordenar y practicar visitas domiciliarias, así como los demás actos que establezcan las disposiciones fiscales, para comprobar el cumplimiento de las obligaciones establecidas en el Código Fiscal de la Ciudad de México y demás disposiciones legales aplicables;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">V. Determinar, recaudar y cobrar los ingresos federales coordinados, con base en las leyes, convenios de coordinación, acuerdos o convenios de colaboración que rijan la materia, así como ejercer las facultades y demás actos de comprobación que las mismas establezcan;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">VI. Imponer las sanciones que correspondan por infracciones a disposiciones fiscales y demás ordenamientos fiscales de carácter local o federal, cuya aplicación esté encomendada a la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">VII. Ejercer la facultad económico coactiva, para hacer efectivos los créditos fiscales a favor de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">VIII. Vigilar y asegurar en general el cumplimiento de las disposiciones fiscales;&nbsp;</p>
+
+						<p style="text-align: justify;">IX. Formular las denuncias, querellas o su equivalente, en materia de delitos fiscales y de cualquier otro que represente un daño a la hacienda pública de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">X. Representar en toda clase de procedimientos judiciales o administrativos los intereses de la hacienda pública de la Ciudad y los que deriven de las funciones operativas inherentes a los acuerdos o convenios del Ejecutivo Federal en materia de ingresos federales coordinados;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XI. Representar al Gobierno de la Ciudad ante las autoridades fiscales federales y locales para la presentación de avisos, declaraciones, manifestaciones y en general los actos y actividades tendientes a cumplir centralmente con las obligaciones fiscales a cargo de las Dependencias, Alcaldías, Órganos Desconcentrados y Entidades que utilizan el Registro Federal de Contribuyentes del Gobierno de la Ciudad de México;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XII. Dictar las normas, lineamientos y criterios en materia presupuestal a que deberán sujetarse las Dependencias, Órganos Desconcentrados y Entidades, y en su caso las Alcaldías, para la formulación de los programas que servirán de base para la elaboración de sus respectivos anteproyectos de presupuesto, así como para el control, evaluación y seguimiento del gasto público de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XIII. Formular el Proyecto de Presupuesto de Egresos y presentarlo a consideración de la persona titular de la Jefatura de Gobierno;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XIV. Controlar el ejercicio del Presupuesto de Egresos de la Ciudad de México y evaluar el resultado de su ejecución;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XV. Formular la cuenta anual de la hacienda pública de la Ciudad, así como promover el cumplimiento de la normatividad en materia de armonización contable que emitan las autoridades federales competentes y, en su caso, emitir las disposiciones para su aplicación;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XVI. Intervenir en la autorización y evaluación de los programas de inversión de las Dependencias y Entidades de la Administración Pública de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XVII. Emitir opinión sobre los precios y tarifas de los bienes y servicios de la Administración Pública de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XVIII. Formular los proyectos de leyes y disposiciones fiscales de la Ciudad, así como elaborar las iniciativas de Ley de Ingresos y Decreto de Presupuesto de Egresos de la Ciudad de México;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XIX. Llevar y mantener actualizados los padrones fiscales;</p>
+
+						<p style="text-align: justify;">XX. Expedir las reglas de carácter general en materia de hacienda pública a que se refiere el Código Fiscal de la Ciudad de México;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXI. Cancelar los créditos fiscales a favor de la federación en los términos establecidos en las leyes fiscales federales y en los acuerdos o convenios celebrados con el ejecutivo federal;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXII. Planear, instrumentar, emitir normas y políticas en materia de relaciones laborales aplicables a la administración del capital humano al servicio de la Administración Pública de la Ciudad, incluyendo el ingreso al servicio público, evaluación, organización, capacitación y desarrollo de personal; así como autorizar las relativas a las políticas de gasto público de servicios personales, salariales y de prestaciones sociales y económicas;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXIII. Normar y aprobar los programas de contratación de las personas prestadoras de servicios profesionales, así como emitir las reglas para dictaminar la procedencia de los contratos con remuneración equivalente a la de personas servidoras públicas de estructura;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXIV. Expedir los nombramientos del personal de la Administración Pública, con excepción de las Entidades y Alcaldías;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXV. Promover la realización de estudios actuariales y proyecciones de pensiones, a fin de prever las necesidades financieras y la viabilidad de los sistemas de pensiones y jubilaciones de la Administración Pública, y presidir los órganos de gobierno de los entes encargados de la administración de estos conceptos, creados o que se puedan crear para tal fin; así como los fondos y/o fideicomisos creados o que se puedan crear a favor del personal al servicio de la Administración Pública de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXVI. Asumir la representación patronal ante representaciones sindicales y autoridades laborales, en relación con las condiciones generales de trabajo y contratos colectivos de trabajo vigentes en las Dependencias, Órganos Desconcentrados, Entidades y Alcaldías, en su caso;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXVII. Dirigir y conducir las relaciones laborales del personal al servicio de la Administración Pública;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXVIII. Participar en el proceso de planeación del desarrollo de la Ciudad, así como en la elaboración, control y evaluación de los programas, en el ámbito de su competencia conforme a las disposiciones aplicables;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXIX. Proponer a la persona titular de la Jefatura de Gobierno, medidas técnicas y políticas para el seguimiento sectorial, la organización interna, desarrollo administrativo, modernización de la actuación y funcionamiento de la Administración Pública de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXX. Diseñar, coordinar y normar las políticas y criterios para el desarrollo, simplificación e innovación en materia de administración interna que debe observar la Administración Pública de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXXI. Emitir lineamientos para la expedición de credenciales de acreditación de verificadores administrativos que realicen las Dependencias, Órganos Desconcentrados; Alcaldías y Entidades de la Administración Pública de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXXII. Integrar, actualizar y difundir por Internet el padrón de verificadores administrativos de la Administración Pública de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXXIII. Establecer la normatividad para dictaminar las estructuras orgánicas y sus modificaciones de la Administración Pública de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXXIV. Supervisar la aplicación de las medidas de desconcentración y descentralización administrativa, que resulten de los procesos de actualización de la Administración Pública de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXXV. Dirigir, conducir y dar seguimiento a los procesos para el monitoreo y la evaluación de la gestión de las Dependencias, Órganos Desconcentrados y Entidades de la Administración Pública de la Ciudad, con independencia del ejercicio de facultades por parte del órgano autónomo constitucional especializado en la materia;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXXVI. Apoyar a la persona titular de la Jefatura de Gobierno en la conducción de las Entidades, y participar en la elaboración de sus respectivos programas;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXXVII. Establecer la normatividad correspondiente a los arrendamientos, enajenaciones y adquisiciones que realice la Ciudad, así como respecto de los servicios que le sean prestados e intervenir en unos y otros, de conformidad con las disposiciones jurídicas aplicables;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XXXVIII. Instrumentar los procedimientos de adquisición para la contratación consolidada de los bienes y servicios que requieran las Dependencias, Órganos Desconcentrados y Entidades de la Administración Pública de la Ciudad, así como las Alcaldías.&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">Además de coordinar, asesorar y apoyar a los mismos en materia de adquisiciones, arrendamientos, prestación de servicios y compras consolidadas;</p>
+
+						<p style="text-align: justify;">XXXIX. Presentar ante el Cabildo, un informe pormenorizado que contenga las mejores condiciones de costo, beneficio y condiciones de entrega respecto de las presupuestadas por la o las Alcaldías, cuando se trate de la compra consolidada de un bien o servicio, en términos de la Constitución Local;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XL. Celebrar, otorgar y suscribir contratos, convenios, escrituras públicas y demás actos jurídicos de cualquier índole, necesarios para el ejercicio de las atribuciones del órgano ejecutivo local, excepto los relativos a obra pública, los servicios relacionados con esta, y otros que sean atribución de otra dependencia, unidad administrativa u órgano desconcentrado, o correspondan a una facultad indelegable de la persona titular de la Jefatura de Gobierno de la Ciudad de México;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XLI. Administrar los bienes muebles e inmuebles propiedad o en resguardo de la Ciudad de México, cuidando su mantenimiento, conservación y acondicionamiento, para lo cual deberá emitir medidas de protección, revalorización, investigación y difusión, con el objetivo de enriquecer el patrimonio de la Ciudad, así como ordenar su recuperación administrativa cuando proceda, y proponer a la persona titular de la Jefatura de Gobierno la concesión del uso o la venta, en su caso, de dichos bienes.&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">De igual manera conocerá de las concesiones de vialidades cuando éstas correspondan a dos o más Alcaldías;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XLII. Administrar los recursos provenientes de las enajenaciones, permisos administrativos temporales revocables, así como de los provenientes del pago sustituto por la transmisión a título gratuito por la constitución de un conjunto habitacional, de oficinas y comercio, o de cualquier otro uso en una superficie de terreno mayor a 5,000 metros cuadrados en suelo urbano, con la finalidad de adquirir reserva territorial, para lo cual creará un fondo específico;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XLIII. Emitir de manera conjunta con la o las Alcaldías de que se trate, la o las declaratorias de protección del patrimonio de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XLIV. En coordinación con las Alcaldías y el Gobierno Federal, establecer un registro y catalogación del patrimonio histórico, cultural, inmaterial y material, natural, rural y urbano territorial, conforme lo establecido en la normatividad de la materia;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XLV. Promover y apoyar la participación de organismos, organizaciones sociales, vecinales, instituciones educativas, culturales y de especialistas, en la preservación, protección, conservación, revalorización, restauración, gestión, uso sustentable, disfrute y demás actividades relativas al patrimonio;&nbsp;</p>
+
+						<p style="text-align: justify;">XLVI. Dirigir y coordinar el Sistema de Valuación de Bienes del Gobierno de la Ciudad;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XLVII. Aplicar la normatividad y control sobre la administración y enajenación de bienes del patrimonio de la ciudad, así como establecer lineamientos para tal efecto y para su adquisición, uso y destino, conforme a los ordenamientos jurídicos aplicables;&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XLVIII. Establecer y regular las políticas generales de planeación de los servicios de publicidad, propaganda, difusión e información en medios de comunicación gubernamental y privados, así como el mensaje e imagen institucional de la Administración Pública de la Ciudad; y&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">XLIX. Las demás que le confieran las leyes y otros ordenamientos jurídicos.&nbsp;</p>
+
+						<p style="text-align: justify;">&nbsp;</p>
+
+						<p style="text-align: justify;">Para efectos de lo dispuesto en este artículo, la administración de los recursos financieros por parte de la Secretaría de Administración y Finanzas no excluye, sustituye ni limita la responsabilidad o las atribuciones en el manejo y aplicación de los recursos que corresponda a las Unidades Responsables del Gasto, sus titulares y las personas servidoras públicas encargadas de su administración adscritos a la misma Unidad Responsable del Gasto, así como de las correspondientes a las Alcaldías, sus titulares y las personas servidoras públicas encargadas de la administración en la Alcaldía, en los términos previstos por la legislación aplicable. Las anteriores atribuciones serán ejercidas sin perjuicio de las conferidas en la materia a las Alcaldías.</p>
+                     </div>
+                   </div>
+                </div>
+             </div>
+   <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+      <div class="row">
+         <div class="col-md-12">			
+		   <div class="Credential">
+             <div class="Credential-image">
+                <div class="Image-normal">
+				<div class="submenu">
+			<div class="cd-item">
+				<img src="assets/img-Directorio/1.jpg" alt="Item Preview">
+			</div> 
+			</div>
+				</div>
+            </div>
+            <div class="Credential-card">
+				       <div class="Title">
+                    <h1>
+                         Titular
+                    </h1>
+				</div>
+                <div class="Title">
+                    <h3>
+                         Luz Elena González Escobar
+                    </h3>
+				</div>
+                <div class="Title">
+                    <h3>
+                        Titular de la Secretaría de Administración y Finanzas
+                    </h3>
+                </div>	
+                <div class="Title">
+                    <h3>
+                       <strong>Teléfonos:</strong> <br><br>  53458298 / 53458302
+                    </h3>
+                </div>
+		        <div class="Title">
+                    <h3>
+                       <strong>Correo:</strong> <br>
+						<a style="color:#31b700 !important;">legonzalez@finanzas.cdmx.gob.mx </a>			   
+					</h3>
+					
+                </div>
+				<br>
+		     	<br>
+				<br>
+				<h2>Semblanza:</h2>
+				<br>
+				<p>
+				Luz Elena González Escobar es economista por la Universidad Nacional Autónoma de México, con maestría en “Gestión de la ciudad”, diversos estudios de especialización en urbanismo y finanzas públicas y es egresada del programa de estudios avanzados “Leadership for Environment and Development” (LEAD) del Colegio de México.
+				</p>
+				<p>  
+              	Luz Elena González Escobar es economista por la Universidad Nacional Autónoma de México, con maestría en “Gestión de la ciudad”, diversos estudios de especialización en urbanismo y finanzas públicas y es egresada del programa de estudios avanzados “Leadership for Environment and Development” (LEAD) del Colegio de México.     
+				</p>
+			
+				<p> 
+                En la esfera gubernamental, ha participado en la planeación y operación de diversos proyectos en la Ciudad de México y ha sido:
+			    </p> 
+				<br>
+                     <li>Coordinadora General de Desarrollo Educativo y Pedagógico de la Secretaría de Educación del Gobierno del Distrito Federal</li>
+			         <li>Subtesorera de Catastro y Padrón Territorial del Gobierno del Distrito Federal</li> 
+				     <li>Directora General del Fideicomiso de Recuperación Crediticia (FIDERE)</li>
+				     <li>Directora General de la Red de Transporte Público (RTP)</li>
+				     <li>Directora Ejecutiva de Integración de Políticas de la Secretaría de Medio Ambiente del Distrito Federal</li>
+					 <li>Directora Ejecutiva de Integración de Políticas de la Secretaría de Medio Ambiente del Distrito Federal
+                        
+						 En el ámbito académico, ha sido  profesora en la Facultad de Economía de la UNAM. Ha participado en diversos foros, conferencias y seminarios tanto nacionales como internacionales en temas de desarrollo urbano, finanzas públicas, medio ambiente y transporte.</li>
+			            <br>
+				
+                       <p>Directora Ejecutiva de Integración de Políticas de la Secretaría de Medio Ambiente del Distrito Federal
+                        En el ámbito académico, ha sido  profesora en la Facultad de Economía de la UNAM. Ha participado en diversos foros, conferencias y seminarios tanto nacionales como internacionales en temas de desarrollo urbano, finanzas públicas, medio ambiente y transporte.</p>   
+				<br>
+                     <h2>Formación Académica/Escolaridad:</h2>
+				   	 <br>
+				
+				     <li>Licenciada en Economía</li>
+					 <li>Maestra en Gestión de la Ciudad.</li>
+             
+				<br>
+				     <h2>Experiencia:</h2>
+	
+				<br>
+					 <li>Coordinadora General de Desarrollo Educativo y Pedagógico de la Secretaría de Educación del Distrito Federal.</li>
+					 <li>Subtesorera de Catastro y Padrón Territorial de la Secretaría de Finanzas del Gobierno del Distrito Federal.</li>
+					 <li>Directora General del Fideicomiso de Recuperación Crediticia (FIDERE)</li>
+				     <li>Directora General de la Red de Transporte Público (RTP)</li>
+					 <li>Directora Ejecutiva de Integración de Políticas de la Secretaría de Medio Ambiente</li>
+					 <li>Asesora del Presidente del Instituto de Ecología y asesora de la Subsecretaría de Planeación de la Secretaría de Medio Ambiente, Recursos Naturales y Pesca (Semarnap).</li>
+
+                </div>
+             </div>
+        </div>
+                                  
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+			     </div>
+             </div>  
+	     </div>
+	</div>
+</div>
+</div>
+</main>
+	
+<!-- footer -->
+<footer  class="Footer">
+    <div  class="Footer-child">
+        <div class="container" id="container-footer">
+            <div class="Footer-section--c4">
+                <div class="Footer-card">
+                    <div class="Footer-card-logo">
+						<a href="http://www.finanzas.cdmx.gob.mx/">
+                        <img src="assets/Logo_Generico_F.png" alt="Logo de la Dependencia">
+						</a>
+                    </div>
+                    <div  class="Footer-card-data">
+                        <div class="Footer-title">	
+                            <h3>
+                                Atención ciudadana
+                            </h3>
+                        </div>
+                        <div class="Footer-card-address">
+                            <div class="Text">
+                                <h3>Dirección:</h3> Calle Plaza de la Constitución 1
+Colonia Centro, Delegación Cuauhtémoc C.P. 06000, Ciudad de México
+                            </div>				
+                        </div>
+                    </div>
+                </div>
+                <ul class="Footer-social">
+                    <li style="color:#FFFFFF;" class="Footer-title">
+                        <h3>
+                            Redes sociales
+                        </h3>
+                    </li>
+                    <li class="FooterSocial-item">
+                        <a href="https://es-es.facebook.com/FinanzasCDMX?sk=wall" target="_blank"><i class="fa fa-facebook" id="facebook"></i></a>
+                    </li>
+                    <li class="FooterSocial-item">
+                        <a href="https://twitter.com/Finanzas_CDMX" target="_blank"><i class="fa fa-twitter" id="twitter"></i></a>
+                    </li>
+                    <li class="FooterSocial-item">
+                        <a href="https://www.youtube.com/channel/UC2wcbLYzyWq5kL2t0M2MrFA?feature=guide" target="_blank"><i class="fa fa-youtube" id="youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div  class="Footer-section--c3">
+                <div class="Footer-links">
+					
+                    <ul class="Footer-links-content">
+                        <li style="color:#FFFFFF;" class="Footer-title">
+                            <h3>
+                                Navegación
+                            </h3>
+                        </li>
+                        <li class="Footer-links-link"><a href="http://www.finanzas.cdmx.gob.mx">Inicio</a></li>
+
+                        <li class="Footer-links-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/secretaria">
+                                Secretaría
+                            </a>
+                        </li>
+                        <li class="Footer-links-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/servicios">
+                                Servicios
+                            </a>
+                        </li>
+
+                        <li class="Footer-links-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/programas">
+                                Programas
+                            </a>
+                        </li>
+
+                        <li class="Footer-links-link">
+                            <a href="http://www.finanzas.cdmx.gob.mx/notificaciones">
+                                Notificaciones
+                            </a>
+                        </li>
+                        <li class="Footer-links-link"><a href="http://www.finanzas.cdmx.gob.mx/secretaria/transparencia">Transparencia</a></li>
+                    </ul>
+					
+                </div>
+            </div>
+            <div class="Footer-section--c3">
+                <div class="Footer-links">
+                    <ul class="Footer-links-content">
+                        <li style="color:#FFFFFF;" class="Footer-title">
+                            <h3>
+                                Sitios relacionados
+                            </h3>
+                        </li>
+                        <li style="color:#FFFFFF;" class="FooterLinks-link">
+                            <a style="color:#FFFFFF;" href="http://www.data.consejeria.cdmx.gob.mx/index.php/gaceta"  target=_blank>
+                                Gaceta Oficial de la Ciudad de México
+                            </a>
+                        </li>
+                        <li class="FooterLinks-link">
+                            <a style="color:#FFFFFF;" href="http://www.fidere3.df.gob.mx/"  target=_blank>
+                                Fidere
+                            </a>
+                        </li>
+                        <li class="FooterLinks-link">
+                            <a style="color:#FFFFFF;" href="http://www.finanzas.cdmx.gob.mx/servicios-al-contribuyente/constancia-de-credito-simple" >
+                                Contratación de Crédito Simple 2016
+                            </a>
+                        </li>
+						    <li class="FooterLinks-link">
+                            <a style="color:#FFFFFF;" href="http://www.finanzas.cdmx.gob.mx/credito-simple-2017" >
+                               Contratación de Crédito Simple 2017
+                            </a>
+                        </li>
+                        <li class="FooterLinks-link">
+                            <a style="color:#FFFFFF;" href="http://www.finanzas.cdmx.gob.mx/storage/app/uploads/public/585/c35/b5e/585c35b5e8c44585173852.pdf" >
+                                Contrato de Crédito HSBC 2016
+                            </a>
+                        </li>
+						     <li class="FooterLinks-link">
+                            <a style="color:#FFFFFF;" href="https://data.finanzas.cdmx.gob.mx/programas_anuales_evaluacion.html" >
+                               Programas Anuales de Evaluación
+                            </a>
+                        </li>
+						     <li class="FooterLinks-link">
+                            <a style="color:#FFFFFF;" href="https://data.finanzas.cdmx.gob.mx/proveedores.html" >
+                                Procedimiento para la solicitud
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+				
+            <div class="Footer-section--c2">
+                <div class="Footer-banners">
+                   <div class="Footer-banners-item">
+					  <div class="layer-agileits2">
+                        <a href="http://transparencia.finanzas.cdmx.gob.mx/"target="_blank">
+                         <img width="390" height="115" src="assets/Tenencia/tranp-saf+copia.jpg" alt="Ventanilla Única Delegacional"/>
+						</a>
+					 </div>	
+                  </div>
+                  <div class="Footer-banners-item">
+					<div class="layer-agileits2">
+                        <a href="https://www.transparencia.cdmx.gob.mx/oficialia-mayor-del-gobierno-de-la-ciudad-de-mexico"target="_blank">
+                            <img width="320" height="115" src="assets/Tenencia/transp-om.jpg" alt="Centros de Servicios y Atención Ciudadana (CESAC)"/>
+                        </a>
+						</div>
+                    </div>
+                    <div class="Footer-banners-item">
+					  <div class="layer-agileits2">
+                        <a href="http://www.datosabiertos.cdmx.gob.mx"target="_blank">
+                            <img width="320" height="115" src="assets/Tenencia/datos_abiertos.jpg" alt="Contrataciones Abiertas"/>
+                        </a>		   
+						</div>	  		   
+                    </div>
+                    <div class="Footer-banners-item">
+					   <div class="layer-agileits2">
+                        <a href="http://www.contratosabiertos.cdmx.gob.mx/"
+                           target="_blank">
+                            <img width="320" height="115" src="assets/Tenencia/contrataciones.jpg" alt="Contrataciones Abiertas"/>
+                        </a>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <div class="Footer-child">
+        <div class="container">	
+            <div class="Footer-info">	
+                <div style="color:#FFFFFF;" class="Footer-info-link">
+                    <b>
+                    CMS CDMX v1.18.0 2019
+                    </b>
+                </div>
+                <div  class="Footer-info-link">
+                    <a style="color:#FFFFFF;" href="http://www.finanzas.cdmx.gob.mx/terminos-y-condiciones">
+                        Términos y Condiciones
+				    </a>
+                </div>
+                <div class="Footer-info-link">
+                    <a style="color:#FFFFFF;" href="http://www.finanzas.cdmx.gob.mx/terminos-y-condiciones#Datos-personales">
+                        Política de privacidad
+                    </a>
+                </div>
+                <div class="Footer-info-link">
+                    <a style="color:#FFFFFF;" href="http://www.cdmx.gob.mx/lgacdmx">
+                        Licencia de Gobierno Abierto CDMX
+                    </a>
+                </div>
+			</div>	
+        </div>
+    </div>					
+</footer>
+	
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script>
+  <script src="js/featured.js"></script>
+	
+<div style="margin-right: -20px; margin-bottom:-20px;" id="gotop"></div>
+<script src="js/jquery.gotop.js"></script>
+
+<script>
+$('#gotop').gotop({
+  customHtml: '<i class="fa fa-angle-up fa-2x"></i>',
+  bottom: '2em',
+  right: '2em'
+});
+</script>
+</body>
+</html>
